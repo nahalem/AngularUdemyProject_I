@@ -5,9 +5,19 @@ Components communication
     <label for="messageField">
       Message for the child component
     </label>
-    <input id="messageField" type="number" class="form-control" [(ngModel)]="data" />
+    <input id="messageField" type="number" class="form-control" [(ngModel)]="data"/>
   </div>
 </div>
 
-<app-child [data]="data" (receiveMessage)="sendMessage($event)"></app-child>
-<br/>
+<div class='row'>
+  AppChild component
+  <div class='col-lg-12'>
+    <app-child [data]="data" (receiveMessage)="sendMessage($event)"></app-child>
+  </div>
+</div>
+<div class='row'>
+  Parrent component
+  <div class='col-lg-12'>
+    <span class='list-group-item'>{{data}}</span>
+  </div>
+</div>

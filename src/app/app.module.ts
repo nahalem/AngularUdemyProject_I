@@ -21,6 +21,10 @@ import { RecipesItemComponent } from './components/recipes/recipes-item/recipes-
 import { ShoppingListComponent } from './components/shopping/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './components/shopping/shopping-edit/shopping-edit.component';
 import { RecipesComponent } from './components/recipes/recipes/recipes.component';
+import { LandingPageComponent } from './components/landing-page/landing-page/landing-page.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found/page-not-found.component';
+import { ViewChildComponent } from './components/test-components/communication/view-child-communication/child/child.component';
+import { ViewChildParentComponent } from './components/test-components/communication/view-child-communication/parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { RecipesComponent } from './components/recipes/recipes/recipes.component
     RecipesItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    RecipesComponent
+    RecipesComponent,
+    LandingPageComponent,
+    PageNotFoundComponent,
+    ViewChildComponent,
+    ViewChildParentComponent
   ],
   imports: [
     BrowserModule,

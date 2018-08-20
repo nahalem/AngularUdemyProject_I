@@ -6,7 +6,7 @@ import { Component, Input, Output, OnInit, OnChanges, EventEmitter } from '@angu
     styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-    @Input() data: any;
+    @Input() @Output() data: any;
     @Output() messageEvent = new EventEmitter<any>();
     message: string;
 

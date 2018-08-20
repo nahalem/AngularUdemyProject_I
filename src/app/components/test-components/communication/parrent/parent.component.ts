@@ -14,6 +14,7 @@ export class ParentComponent implements OnInit {
   ngAfterViewInit() {}
 
   sendMessage(event): void {
+    console.log(event.value);
     console.log(this.data);
   }
 }

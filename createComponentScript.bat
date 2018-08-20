@@ -3,19 +3,22 @@ REM Example: componentName=SomeComponent
 REM Script should build all the neccessary files structure to begin work with it.
 CLS
 
-SET componentName=recipes
-SET componentsFolderName=recipes
+SET componentName=page-not-found
+SET componentsFolderName=page-not-found
 
 REM Components
-ng g c components/%componentsFolderName%/%componentName% --spec false
+REM ng g c components/%componentsFolderName%/%componentName% --spec false
+ng g c components/%componentName% --spec false
+
 
 REM Model
-ng g cl components/%componentsFolderName%/models/%componentName% --spec false
+REM ng g cl components/%componentsFolderName%/models/%componentName% --spec false
 
+REM ng g c components/test-components/communication/viewparent parent  --spec false
+REM ng g c components/test-components/communication/view-child-communication/child  --spec false
 
-
-
-
+REM przyklad
+REM ng g component components/[nazwa_komponentu]
 
 
 

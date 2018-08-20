@@ -1,0 +1,19 @@
+<p>
+  parent viewChild works!
+</p>
+
+<div class="row">
+    <div class='col-lg-12'>
+      <input type='text' class='form-control' #serverContentInput>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class='col-lg-12'>
+      <button (click)='makeSomeAction()'>Test</button>
+    </div>
+    <div class='col-lg-12'>
+        <app-viewChild-child [serverContentInput] = 'serverContentInput' (makeSomeAction)='makeSomeAction()' ></app-viewChild-child>
+      </div>
+
+  </div>

@@ -15,6 +15,16 @@ export class RecipeMock implements IMock<Recipe> {
         "Test Recipe",
         "This is simply a test",
         "https://pbs.twimg.com/profile_images/980544485108064256/jfiHHXbR_400x400.jpg"
+      ),
+      new Recipe(
+        "Test Recipe",
+        "This is simply a test",
+        "https://pbs.twimg.com/profile_images/980544485108064256/jfiHHXbR_400x400.jpg"
+      ),
+      new Recipe(
+        "Test Recipe",
+        "This is simply a test",
+        "https://pbs.twimg.com/profile_images/980544485108064256/jfiHHXbR_400x400.jpg"
       )
     );
   }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // import { LoginComponent } from './components/login/login.component';
-// import { LandingPageComponent } from "./components/landing-page/landing-page.component";
+import { LandingPageComponent } from "./components/landing-page/landing-page/landing-page.component";
 // import { LandingPageResolver } from "./components/landing-page/landing-page.resolver";
 // import { UserChangePasswordComponent } from './components/user-change-password/user-change-password.component';
 // import { SettingsPopup } from './components/settings/settingsPopup';
@@ -10,13 +10,13 @@ import { Routes, RouterModule } from '@angular/router';
 // import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-    // {
-    //     path: '',
-    //     component: LandingPageComponent,
-    //     resolve: {
-    //         profile: LandingPageResolver
-    //     }
-    // },
+    {
+        path: '',
+        component: LandingPageComponent,
+        // resolve: {
+        //     profile: LandingPageResolver
+        // }
+    },
     // {
     //     path: 'forecast/home',
     //     loadChildren: 'app/IngenicoOneForecast/modules/home/home.module#HomeModule',
