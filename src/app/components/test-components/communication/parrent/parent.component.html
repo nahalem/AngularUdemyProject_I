@@ -1,0 +1,13 @@
+Components communication
+<br/>
+<div class="col-lg-1">
+  <div class="form-group" id="searchFieldLabel">
+    <label for="messageField">
+      Message for the child component
+    </label>
+    <input id="messageField" type="number" class="form-control" [(ngModel)]="data" />
+  </div>
+</div>
+
+<app-child [data]="data" (receiveMessage)="sendMessage($event)"></app-child>
+<br/>
