@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-lg-6" [ngStyle]="{ 'background-color' : 'blue', 'color' : 'white' }">
+    <ul *ngFor='let logItem of data; let i = index'>
+      <li>expand log:
+        <div (click)="expandLog($event, logItem)"> {{i}}
+          <span [ngClass]="{'text-danger':true}">+</span>
+        </div>
+        <code *ngIf="logItem.isExpanded" [ngStyle]="{ 'background-color' : logItem.color }" [ngClass]="{'text-primary':true}">Log: {{logItem.dateRegister}} - {{logItem.eventLog}} - click: {{logItem.clickCounter}}
+        </code>
+        <br />
+        <button class="btn btn-info" (click)="removeLog(logItem)">Remove log</button>
+      </li>
+    </ul>
+  </div>
+</div>

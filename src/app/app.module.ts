@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -8,6 +9,9 @@ import { ButtonModule } from 'primeng/primeng';
 import { RadioButtonModule } from 'primeng/primeng';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+
+// Routing
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 // custom components
@@ -25,6 +29,8 @@ import { LandingPageComponent } from './components/landing-page/landing-page/lan
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found/page-not-found.component';
 import { ViewChildComponent } from './components/test-components/communication/view-child-communication/child/child.component';
 import { ViewChildParentComponent } from './components/test-components/communication/view-child-communication/parent/parent.component';
+import { ComponentLifecycleComponent } from './components/component-lifecycle/component-lifecycle.component';
+import { ConsoleComponent } from './components/console/console.component';
 
 @NgModule({
   declarations: [
@@ -42,9 +48,13 @@ import { ViewChildParentComponent } from './components/test-components/communica
     LandingPageComponent,
     PageNotFoundComponent,
     ViewChildComponent,
-    ViewChildParentComponent
+    ViewChildParentComponent,
+    ComponentLifecycleComponent,
+    ConsoleComponent
   ],
   imports: [
+    AppRoutingModule,
+    RouterModule,
     BrowserModule,
     FormsModule,
     HttpModule,
