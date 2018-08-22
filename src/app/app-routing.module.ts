@@ -7,6 +7,9 @@ import { ReceipesListComponent } from "./components/recipes/receipes-list/receip
 import { RecipesDetailComponent } from "./components/recipes/recipes-detail/recipes-detail.component";
 import { RecipesItemComponent } from "./components/recipes/recipes-item/recipes-item.component";
 import { PageNotFoundComponent } from "./components/page-not-found/page-not-found/page-not-found.component";
+import { ShoppingListComponent } from "./components/shopping/shopping-list/shopping-list.component";
+import { ShoppingEditComponent } from "./components/shopping/shopping-edit/shopping-edit.component";
+
 // import { LandingPageResolver } from "./components/landing-page/landing-page.resolver";
 // import { UserChangePasswordComponent } from './components/user-change-password/user-change-password.component';
 // import { SettingsPopup } from './components/settings/settingsPopup';
@@ -46,6 +49,22 @@ const routes: Routes = [
   {
     path: "recipesItem",
     component: RecipesItemComponent
+    // resolve: {
+    //     profile: LandingPageResolver
+    // }
+  },
+  ,
+  {
+    path: "shoppingEdit",
+    component: ShoppingEditComponent
+    // resolve: {
+    //     profile: LandingPageResolver
+    // }
+  },
+  ,
+  {
+    path: "shoppingList",
+    component: ShoppingListComponent
     // resolve: {
     //     profile: LandingPageResolver
     // }
