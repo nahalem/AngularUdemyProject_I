@@ -31,6 +31,8 @@ import { ViewChildComponent } from './components/test-components/communication/v
 import { ViewChildParentComponent } from './components/test-components/communication/view-child-communication/parent/parent.component';
 import { ComponentLifecycleComponent } from './components/component-lifecycle/component-lifecycle.component';
 import { ConsoleComponent } from './components/console/console.component';
+import { ServerComponent } from "./components/server/server.component";
+import { ServersComponent } from './components/servers/servers.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { ConsoleComponent } from './components/console/console.component';
     ViewChildComponent,
     ViewChildParentComponent,
     ComponentLifecycleComponent,
-    ConsoleComponent
+    ConsoleComponent,
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     AppRoutingModule,

@@ -53,7 +53,6 @@ const routes: Routes = [
     //     profile: LandingPageResolver
     // }
   },
-  ,
   {
     path: "shoppingEdit",
     component: ShoppingEditComponent
@@ -61,7 +60,6 @@ const routes: Routes = [
     //     profile: LandingPageResolver
     // }
   },
-  ,
   {
     path: "shoppingList",
     component: ShoppingListComponent
