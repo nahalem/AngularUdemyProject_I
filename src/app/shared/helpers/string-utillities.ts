@@ -16,7 +16,7 @@ declare global {
         formatNumber(value: string): string;
         isSafariBrowser(): boolean;
         to2DigitNo(no: string): string;
-        padStart(val:string, size:number, char: string): string;
+        roundDecimal(value: any, toFixed: number);
     }
 }
 
@@ -130,8 +130,10 @@ String.isSafariBrowser = function () {
     return is_safari
 }
 
-String.padStart = function(val:string, size:number, char: string): string {
-    let s = val;
-    while (s.length < size) s = char + s;
-    return s;
+String.roundDecimal = function (value: any, toFixed?: number) {
+  let currentValue = value.toString();
+  if(String.isBlank(currentValue)){
+    return currentValue;
+  }
+  return Number.parseFloat(currentValue).toFixed(toFixed);
 }
