@@ -1,0 +1,23 @@
+<p>
+  servers works!
+</p>
+
+<!-- <input type='text' class='form-control' (input)='onUpdateServerName($event)'> -->
+<input type='text' class='form-control' [(ngModel)]='serverName'>
+<p>{{serverName}}</p>
+
+<button class="btn btn-primary" [disabled]='allowNewServer' (click)='onCreateServer()'>Add Server</button>
+<!-- <p [innerHTML]='allowNewServer'></p> -->
+<!-- <p>{{serverCreationStatus}}</p> -->
+
+<!-- dodanie dyrektywy warunkowej  -->
+<p *ngIf="serverCreated; else noServer"><b>Server was created, server name is {{ serverName }}</b></p>
+
+<ng-template #noServer>
+  <p>
+    <b>No server was created!</b>
+</p>
+</ng-template>
+
+<app-server></app-server>
+<app-server></app-server>
