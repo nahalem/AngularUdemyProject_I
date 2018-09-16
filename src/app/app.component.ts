@@ -16,4 +16,20 @@ export class AppComponent {
     element.content = "Content server";
     this.serverElements.push(element);
   }
+
+  onServerAdded(serverData: ServerElement): void {
+    let element = new ServerElement();
+    element.name = serverData.name;
+    element.type = "server";
+    element.content = serverData.content;
+    this.serverElements.push(element);
+  }
+
+  onBlueprintAdded(bluePrintData: ServerElement): void {
+    let element = new ServerElement();
+    element.name = bluePrintData.name;
+    element.type = "blueprint";
+    element.content = bluePrintData.content;
+    this.serverElements.push(element);
+  }
 }
