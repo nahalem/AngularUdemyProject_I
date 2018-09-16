@@ -33,6 +33,8 @@ import { ComponentLifecycleComponent } from './components/component-lifecycle/co
 import { ConsoleComponent } from './components/console/console.component';
 import { ServerComponent } from "./components/server/server.component";
 import { ServersComponent } from './components/servers/servers.component';
+import { CockpitComponent } from './components/cockpit/cockpit.component';
+import { ServerElementComponent } from './components/server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { ServersComponent } from './components/servers/servers.component';
     ComponentLifecycleComponent,
     ConsoleComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     AppRoutingModule,

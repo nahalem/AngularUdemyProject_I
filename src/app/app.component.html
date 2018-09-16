@@ -1,14 +1,23 @@
-
 <!-- <app-header></app-header> -->
 <div class="container">
-<div class="row">
-  <div class="col-lg-12">
-    <h3>I'm in the AppComponent!</h3>
-    <hr>
-  </div>
-</div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>I'm in the AppComponent!</h3>
+      <hr>
+    </div>
 
-  <app-servers></app-servers>
+    <app-cockpit></app-cockpit>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12">
+       <app-server-element  *ngFor="let serverElement of serverElements" [element]="serverElement"></app-server-element>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- <app-servers></app-servers> -->
 
 
 
