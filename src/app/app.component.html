@@ -9,7 +9,17 @@
     <hr>
     <div class="row">
       <div class="col-lg-12">
-       <app-server-element  *ngFor="let serverElement of serverElements" [srvElement]="serverElement"></app-server-element>
+       <app-server-element  *ngFor="let serverElement of serverElements" [srvElement]="serverElement">
+          <p>
+              <strong *ngIf="serverElement.type === 'server'" style="color : red">
+                {{ serverElement.content }}
+              </strong>
+              <strong *ngIf="serverElement.type === 'blueprint'">
+                {{ serverElement.content }}
+              </strong>
+            </p>
+            {{ serverElement.name }}
+       </app-server-element>
       </div>
     </div>
   </div>
