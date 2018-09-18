@@ -35,6 +35,9 @@ import { ServerComponent } from "./components/server/server.component";
 import { ServersComponent } from './components/servers/servers.component';
 import { CockpitComponent } from './components/cockpit/cockpit.component';
 import { ServerElementComponent } from './components/server-element/server-element.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+
+import { PrimeNgModule } from "./modules/prime-ng/prime-ng.module";
 
 @NgModule({
   declarations: [
@@ -58,7 +61,8 @@ import { ServerElementComponent } from './components/server-element/server-eleme
     ServerComponent,
     ServersComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    NavigationComponent
   ],
   imports: [
     AppRoutingModule,
@@ -71,7 +75,9 @@ import { ServerElementComponent } from './components/server-element/server-eleme
     AccordionModule,
     PanelModule,
     ButtonModule,
-    RadioButtonModule
+    RadioButtonModule,
+
+    PrimeNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]

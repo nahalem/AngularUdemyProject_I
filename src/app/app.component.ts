@@ -11,7 +11,7 @@ export class AppComponent {
   constructor() {
     this.serverElements = new Array<ServerElement>();
     let element = new ServerElement();
-    element.name = "Test";
+    element.name = "TestServer";
     element.type = "server";
     element.content = "Content server";
     this.serverElements.push(element);
@@ -32,4 +32,12 @@ export class AppComponent {
     element.content = bluePrintData.content;
     this.serverElements.push(element);
   }
+
+  onChangeFirst() : void{
+    this.serverElements[0].name = 'Changed!';
+  };
+
+  onDestroyFirst() : void{
+    this.serverElements.splice(0,1);
+  };
 }

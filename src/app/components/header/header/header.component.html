@@ -1,4 +1,13 @@
-<nav class="navbar navbar-default">
+
+<nav class="navbar navbar-light bg-dark">
+    <form class="form-inline">
+      <button class="btn btn-outline-success" routerLink="/console" type="button">Console Component</button>
+      <button class="btn btn-sm btn-outline-secondary" routerLink="/prime-module" type="button">PrimeNG - module</button>
+      <button class="btn btn-sm btn-outline-secondary" routerLink="/prime-ng-ex1" type="button">PrimeNG - example</button>
+    </form>
+  </nav>
+
+<nav class="navbar navbar-default navbar-dark bg-dark">
   <div class="container-fluid">
     <div class="navbar-header">
       <a href="#" class="navbar-brand">Receipe Book</a>
@@ -7,10 +16,10 @@
 
       <ul class="nav navbar-nav">
         <li>
-          <a href="/recipes">Receipes</a>
+          <a routerLink="/recipes">Receipes</a>
         </li>
         <li>
-          <a href="#">Shopping</a>
+          <a routerLink="/shoppingList">Shopping</a>
         </li>
       </ul>
 
@@ -21,10 +30,10 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="#">EventEmmiter communication</a>
+              <a routerLink="#">EventEmmiter communication</a>
             </li>
             <li>
-              <a href="#">Component lifecycle</a>
+              <a routerLink="#">Component lifecycle</a>
             </li>
           </ul>
         </li>
@@ -37,10 +46,10 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="#">Save Data</a>
+              <a routerLink="#">Save Data</a>
             </li>
             <li>
-              <a href="#">Fetch Data</a>
+              <a routerLink="#">Fetch Data</a>
             </li>
           </ul>
         </li>

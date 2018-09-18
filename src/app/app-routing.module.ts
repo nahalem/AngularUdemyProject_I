@@ -10,6 +10,11 @@ import { PageNotFoundComponent } from "./components/page-not-found/page-not-foun
 import { ShoppingListComponent } from "./components/shopping/shopping-list/shopping-list.component";
 import { ShoppingEditComponent } from "./components/shopping/shopping-edit/shopping-edit.component";
 
+import {ComponentLifecycleComponent} from './components/component-lifecycle/component-lifecycle.component';
+import { PrimeNgComponent } from "./components/prime-ng/prime-ng.component";
+import { PrimeNgModuleComponent } from "./modules/prime-ng/prime-ng.component";
+
+
 // import { LandingPageResolver } from "./components/landing-page/landing-page.resolver";
 // import { UserChangePasswordComponent } from './components/user-change-password/user-change-password.component';
 // import { SettingsPopup } from './components/settings/settingsPopup';
@@ -17,7 +22,7 @@ import { ShoppingEditComponent } from "./components/shopping/shopping-edit/shopp
 // import { AuthGuard } from './services/guard.service';
 // import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
-const routes: Routes = [
+const appRoutes: Routes = [
   {
     path: "",
     component: LandingPageComponent
@@ -67,6 +72,27 @@ const routes: Routes = [
     //     profile: LandingPageResolver
     // }
   },
+  {
+    path: "console",
+    component: ComponentLifecycleComponent
+    // resolve: {
+    //     profile: LandingPageResolver
+    // }
+  },
+  {
+    path: "prime-ng-ex1",
+    component: PrimeNgComponent
+    // resolve: {
+    //     profile: LandingPageResolver
+    // }
+  },
+  {
+    path: "prime-module",
+    component: PrimeNgModuleComponent
+    // resolve: {
+    //     profile: LandingPageResolver
+    // }
+  },
   // {
   //     path: 'forecast/home',
   //     loadChildren: 'app/IngenicoOneForecast/modules/home/home.module#HomeModule',
@@ -83,7 +109,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

@@ -1,6 +1,10 @@
-<!-- <app-header></app-header> -->
+<!-- <app-component-lifecycle></app-component-lifecycle> -->
+
 <div class="container">
-  <div class="row">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+
+  <!-- <div class="row">
     <div class="col-lg-12">
       <h3>I'm in the AppComponent!</h3>
       <hr>
@@ -9,8 +13,10 @@
     <hr>
     <div class="row">
       <div class="col-lg-12">
-       <app-server-element  *ngFor="let serverElement of serverElements" [srvElement]="serverElement">
-          <p>
+       <button class="btn btn-danger" (click)="onDestroyFirst()">Destroy First Element</button>
+       <button class="btn btn-default" (click)="onChangeFirst()">Change First Element</button>
+       <app-server-element  *ngFor="let serverElement of serverElements" [srvElement]="serverElement" [name]="serverElement.name">
+          <p #contentParagraph>
               <strong *ngIf="serverElement.type === 'server'" style="color : red">
                 {{ serverElement.content }}
               </strong>
@@ -22,14 +28,10 @@
        </app-server-element>
       </div>
     </div>
-  </div>
-
+  </div> -->
 
   <!-- <app-servers></app-servers> -->
 
-
-
-  <!-- <app-component-lifecycle></app-component-lifecycle> -->
   <!-- <div class="row">
     <div class="col-md-12">
       <app-parent></app-parent>

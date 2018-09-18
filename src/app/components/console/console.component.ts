@@ -7,8 +7,7 @@ import { Logs } from "./models/console.model";
   styleUrls: ["./console.component.css"]
 })
 export class ConsoleComponent implements OnInit {
-  @Input()
-  data: any;
+  @Input() data: any;
   logColor: string;
   isLogVisible: boolean;
   log: Logs;
@@ -36,6 +35,7 @@ export class ConsoleComponent implements OnInit {
     this.log.isExpanded = true;
     this.logColor = "black";
 
+    console.log('Console App: ngAfterViewChecked()');
     console.log(this.Logs);
     this.Logs.push(this.log);
   }
@@ -51,6 +51,7 @@ export class ConsoleComponent implements OnInit {
   removeLog(log: Logs): void {
     const index: number = this.Logs.indexOf(log);
     this.Logs.splice(index, 1);
+    console.log(index);
     if (this.Logs.length === 0) {
       this.isLogVisible = false;
     }

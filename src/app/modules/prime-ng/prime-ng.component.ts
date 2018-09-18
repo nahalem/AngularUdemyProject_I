@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './prime-ng.component.html',
   styleUrls: ['./prime-ng.component.css']
 })
-export class PrimeNgComponent implements OnInit {
+export class PrimeNgModuleComponent implements OnInit {
 
   constructor() { }
 
