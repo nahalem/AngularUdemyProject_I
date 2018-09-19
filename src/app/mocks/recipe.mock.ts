@@ -14,17 +14,17 @@ export class RecipeMock implements IMock<Recipe> {
       new Recipe(
         "Test Recipe",
         "This is simply a test",
-        "https://pbs.twimg.com/profile_images/980544485108064256/jfiHHXbR_400x400.jpg"
+        "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg"
       ),
       new Recipe(
         "Test Recipe",
         "This is simply a test",
-        "https://pbs.twimg.com/profile_images/980544485108064256/jfiHHXbR_400x400.jpg"
+        "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg"
       ),
       new Recipe(
         "Test Recipe",
         "This is simply a test",
-        "https://pbs.twimg.com/profile_images/980544485108064256/jfiHHXbR_400x400.jpg"
+        "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg"
       )
     );
   }
