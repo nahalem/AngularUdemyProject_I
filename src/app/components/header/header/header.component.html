@@ -1,12 +1,10 @@
+<!-- <p-megaMenu [model]="items"></p-megaMenu> -->
 
-<nav class="navbar navbar-light bg-dark">
-    <form class="form-inline">
-      <button class="btn btn-outline-success" routerLink="/console" type="button">Console Component</button>
-      <button class="btn btn-sm btn-outline-secondary" routerLink="/prime-module" type="button">PrimeNG - module</button>
-      <button class="btn btn-sm btn-outline-secondary" routerLink="/prime-ng-ex1" type="button">PrimeNG - example</button>
-    </form>
-  </nav>
 
+
+
+
+<!-- UDEMY projects -->
 <nav class="navbar navbar-default navbar-dark bg-dark">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -16,26 +14,10 @@
 
       <ul class="nav navbar-nav">
         <li>
-          <a routerLink="/recipes">Receipes</a>
+          <a href="#" (click)="onSelect('recipe', $event)">Receipes</a>
         </li>
         <li>
-          <a routerLink="/shoppingList">Shopping</a>
-        </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" role="button">Test components
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a routerLink="#">EventEmmiter communication</a>
-            </li>
-            <li>
-              <a routerLink="#">Component lifecycle</a>
-            </li>
-          </ul>
+          <a href="#"  (click)="onSelect('shopping', $event)">Shopping</a>
         </li>
       </ul>
 
@@ -54,7 +36,6 @@
           </ul>
         </li>
       </ul>
-
     </div>
   </div>
 </nav>

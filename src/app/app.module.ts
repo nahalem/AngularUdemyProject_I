@@ -9,7 +9,9 @@ import { ButtonModule } from 'primeng/primeng';
 import { RadioButtonModule } from 'primeng/primeng';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-
+import {MenuModule} from 'primeng/primeng';
+import {TieredMenuModule} from 'primeng/primeng';
+import {MegaMenuModule} from 'primeng/primeng';
 // Routing
 import { AppRoutingModule } from './app-routing.module';
 
@@ -38,6 +40,7 @@ import { ServerElementComponent } from './components/server-element/server-eleme
 import { NavigationComponent } from './components/navigation/navigation.component';
 
 import { PrimeNgModule } from "./modules/prime-ng/prime-ng.module";
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +65,8 @@ import { PrimeNgModule } from "./modules/prime-ng/prime-ng.module";
     ServersComponent,
     CockpitComponent,
     ServerElementComponent,
-    NavigationComponent
+    NavigationComponent,
+    LoginComponent
   ],
   imports: [
     AppRoutingModule,
@@ -76,6 +80,9 @@ import { PrimeNgModule } from "./modules/prime-ng/prime-ng.module";
     PanelModule,
     ButtonModule,
     RadioButtonModule,
+    MenuModule,
+    TieredMenuModule,
+    MegaMenuModule,
 
     PrimeNgModule
   ],

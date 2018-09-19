@@ -1,2 +1,2 @@
-export class PrimeNg {
+export class PrimeNgResolver {
 }

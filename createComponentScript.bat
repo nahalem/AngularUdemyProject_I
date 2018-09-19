@@ -3,8 +3,8 @@ REM Example: componentName=SomeComponent
 REM Script should build all the neccessary files structure to begin work with it.
 CLS
 
-SET componentName=navigation
-SET componentsFolderName=navigation
+SET componentName=login
+SET componentsFolderName=login
 
 REM Components
 REM ng g c components/%componentsFolderName%/%componentName% --spec false

@@ -5,15 +5,6 @@
 </div>
 <div class='row'>
   <div class='col-lg-12'>
-    <a href="#" class='list-group-item clearfix' *ngFor='let recipeItem of recipest'>
-      <div class='pull-left'>
-        <h4 class='list-group-item-heading'>{{recipeItem.name}}</h4>
-        <p class='list-group-item-text'>{{recipeItem.description}}</p>
-      </div>
-      <span class='pull-right'>
-        <img src='{{recipeItem.imageUrl}}' alt='{{recipeItem.name}}' class='img-responsive' style='max-height: 50px;'>
-      </span>
-    </a>
-    <app-recipes-item></app-recipes-item>
+    <app-recipes-item *ngFor='let recipeItem of recipest' [recipe] = "recipeItem"></app-recipes-item>
   </div>
 </div>

@@ -13,7 +13,7 @@ import { ShoppingEditComponent } from "./components/shopping/shopping-edit/shopp
 import {ComponentLifecycleComponent} from './components/component-lifecycle/component-lifecycle.component';
 import { PrimeNgComponent } from "./components/prime-ng/prime-ng.component";
 import { PrimeNgModuleComponent } from "./modules/prime-ng/prime-ng.component";
-
+import { LoginComponent } from "./components/login/login.component";
 
 // import { LandingPageResolver } from "./components/landing-page/landing-page.resolver";
 // import { UserChangePasswordComponent } from './components/user-change-password/user-change-password.component';
@@ -93,6 +93,14 @@ const appRoutes: Routes = [
     //     profile: LandingPageResolver
     // }
   },
+  {
+    path: "login",
+    component: LoginComponent
+    // resolve: {
+    //     profile: LandingPageResolver
+    // }
+  },
+
   // {
   //     path: 'forecast/home',
   //     loadChildren: 'app/IngenicoOneForecast/modules/home/home.module#HomeModule',

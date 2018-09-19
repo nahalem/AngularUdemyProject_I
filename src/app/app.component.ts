@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { ServerElement } from "./components/server-element/models/server.element";
+import { fromEventPattern } from "rxjs/observable/fromEventPattern";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -39,5 +40,11 @@ export class AppComponent {
 
   onDestroyFirst() : void{
     this.serverElements.splice(0,1);
+  };
+
+
+  loadedFeature = 'recipe'; // home page
+  onNavigate(feature: string): void{
+    this.loadedFeature = feature;
   };
 }

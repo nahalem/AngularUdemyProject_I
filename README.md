@@ -29,6 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Aditional libraries
 
-PrimeNG components
-Progress bar component - https://github.com/pleerock/ngx-progress-bar
-NG File Upload component - https://github.com/valor-software/ng2-file-upload
+PrimeNG components        - https://www.primefaces.org
+Nebular NG                - https://akveo.github.io/nebular/docs/getting-started/where-to-start
+Progress bar component    - https://github.com/pleerock/ngx-progress-bar
+NG File Upload component  - https://github.com/valor-software/ng2-file-upload
+
