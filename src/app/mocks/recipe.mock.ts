@@ -12,18 +12,18 @@ export class RecipeMock implements IMock<Recipe> {
   private createMock(): void {
     this.data = new Array<Recipe>(
       new Recipe(
-        "Test Recipe",
-        "This is simply a test",
+        "Test Recipe 1",
+        "This is simply a test 1",
         "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg"
       ),
       new Recipe(
-        "Test Recipe",
-        "This is simply a test",
+        "Test Recipe 2",
+        "This is simply a test 2",
         "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg"
       ),
       new Recipe(
-        "Test Recipe",
-        "This is simply a test",
+        "Test Recipe 3",
+        "This is simply a test 3",
         "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg"
       )
     );

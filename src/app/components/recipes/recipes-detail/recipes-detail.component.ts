@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { Recipe } from "../models/recipe.model";
 
 @Component({
   selector: 'app-recipes-detail',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipes-detail.component.css']
 })
 export class RecipesDetailComponent implements OnInit {
+  @Input() recipe: Recipe;
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  ngAfterViewInit(): void {
+    //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+    //Add 'implements AfterViewInit' to the class.
+    console.log('RecipesDetailComponent');
+    console.log(this.recipe);
+  }
 }

@@ -41,6 +41,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 import { PrimeNgModule } from "./modules/prime-ng/prime-ng.module";
 import { LoginComponent } from './components/login/login.component';
+import { MainComponentComponent } from './components/components-communication/main-component/main-component.component';
+import { ListComponentComponent } from './components/components-communication/list-component/list-component.component';
+import { ItemComponentComponent } from './components/components-communication/item-component/item-component.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +69,10 @@ import { LoginComponent } from './components/login/login.component';
     CockpitComponent,
     ServerElementComponent,
     NavigationComponent,
-    LoginComponent
+    LoginComponent,
+    MainComponentComponent,
+    ListComponentComponent,
+    ItemComponentComponent,
   ],
   imports: [
     AppRoutingModule,

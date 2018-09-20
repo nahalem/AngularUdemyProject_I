@@ -1,0 +1,8 @@
+<h1>Persons List</h1>
+
+<div class="row" *ngFor="let person of persons" (click)="onSelectedPerson(person)">
+  <div class="col-lg-3">{{ person.name }}</div>
+  <div class="col-lg-3">{{ person.email }}</div>
+  <div class="col-lg-1">{{ person.gender }}</div>
+  <div class="col-lg-1">{{ person.isAdmin }}</div>
+</div>

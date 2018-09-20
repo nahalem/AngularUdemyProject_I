@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, EventEmitter, Output } from "@angular/core";
 import { Recipe } from "../models/recipe.model";
 import { RecipeMock } from "../../../mocks/recipe.mock";
 
@@ -8,8 +8,10 @@ import { RecipeMock } from "../../../mocks/recipe.mock";
   styleUrls: ["./receipes-list.component.css"]
 })
 export class ReceipesListComponent implements OnInit {
+  @Output() recipeWasSelected = new EventEmitter<Recipe>();
+
   recipest: Recipe[] = [];
-  recipe: Recipe;
+  recipeItem: Recipe;
   recipeMock: RecipeMock;
 
   constructor() {
@@ -18,4 +20,8 @@ export class ReceipesListComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  onRecipeSelected(recipe: Recipe) : void{
+    this.recipeWasSelected.emit(recipe);
+  };
 }
