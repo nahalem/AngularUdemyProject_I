@@ -16,7 +16,7 @@ export class ItemComponentComponent implements OnInit {
   ngOnInit() {}
 
   ngDoCheck(): void {
-    console.log("ngDoCheck");
+    console.log("ItemComponentComponent ngDoCheck");
     if(this.person === undefined){
       this.person = new Person('','','',false);
     }

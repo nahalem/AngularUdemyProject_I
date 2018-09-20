@@ -20,7 +20,7 @@ export class MainComponentComponent implements OnInit {
       //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
     //Add '${implements OnChanges}' to the class.
     console.log('MainComponentComponent ngDoCheck');
-
+    console.log(this.person);
   };
 
   selectedPerson(person: Person) : void{
