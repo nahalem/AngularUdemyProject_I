@@ -1,1 +1,50 @@
-{{ person.name }}
+<div class="row">
+  <div class="col-lg-11">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <div class="row">
+              <div class="col-lg-2">
+                <img class="img-responsive" src="https://cdn1.iconfinder.com/data/icons/avatars-and-biometry-data/154/menu-bar-person-data-biometry-512.png" style="max-width: 100px">
+                  Personal Data
+              </div>
+            </div>
+      </div>
+      <div class="panel panel-body">
+        <div class="row">
+          <div class="col-lg-2">
+            <b>Name:</b>
+          </div>
+          <div class="col-lg-3">
+           {{person.name}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2">
+              <b>Email:</b>
+          </div>
+          <div class="col-lg-3">
+            {{person.email}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2">
+            <b>Gender:</b>
+          </div>
+          <div class="col-lg-3">
+            {{genderName}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2">
+              <b>isAdmin:</b>
+          </div>
+          <div class="col-lg-3">
+            {{person.isAdmin}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

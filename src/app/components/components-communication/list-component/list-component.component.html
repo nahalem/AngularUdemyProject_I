@@ -1,8 +1,18 @@
-<h1>Persons List</h1>
-
+<h1>Persons List First Example</h1>
 <div class="row" *ngFor="let person of persons" (click)="onSelectedPerson(person)">
   <div class="col-lg-3">{{ person.name }}</div>
   <div class="col-lg-3">{{ person.email }}</div>
   <div class="col-lg-1">{{ person.gender }}</div>
   <div class="col-lg-1">{{ person.isAdmin }}</div>
+</div>
+
+<h1>Persons List Second Example</h1>
+<div class="row" *ngFor="let person of persons" (click)="onSelectedPerson(person)">
+  <div class="col-lg-3">{{ person.name }}</div>
+  <div class="col-lg-3">{{ person.email }}</div>
+  <div class="col-lg-1">{{ person.gender }}</div>
+  <div class="col-lg-1">{{ person.isAdmin }}</div>
+</div>
+<div class="row">
+  <app-item-component [person]="currentSelectedPerson"></app-item-component>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Input } from "@angular/core";
+import { Component, OnInit, EventEmitter, Input, Output } from "@angular/core";
 import { Person } from "./../models/person.model";
 
 @Component({
@@ -8,6 +8,7 @@ import { Person } from "./../models/person.model";
 })
 export class ItemComponentComponent implements OnInit {
   @Input() person: Person;
+  genderName: string;
 
   constructor() {
 
@@ -21,5 +22,20 @@ export class ItemComponentComponent implements OnInit {
       this.person = new Person('','','',false);
     }
     console.log(this.person);
+
+    this.setGenderName(this.person.gender);
   }
+
+  setGenderName(gender: string) : void{
+      switch (gender) {
+        case 'M':
+        this.genderName = "Male";
+          break;
+        case 'F':
+        this.genderName = "Female";
+        break;
+        default:
+          break;
+      }
+  };
 }

@@ -10,6 +10,7 @@ import { Person } from "./../models/person.model";
 export class ListComponentComponent implements OnInit {
   persons: Person[] = [];
   mock = new ComponentCommunicationMock();
+  currentSelectedPerson: Person;
 
   @Output() selectedPerson = new EventEmitter<Person>();
 
@@ -24,7 +25,11 @@ export class ListComponentComponent implements OnInit {
 
   onSelectedPerson(person: Person): void {
     console.log("ListComponentComponent onSelectedPerson");
+    console.log('person');
     console.log(person);
+    this.currentSelectedPerson = person;
+    console.log('currentSelectedPerson');
+    console.log(this.currentSelectedPerson);
     this.selectedPerson.emit(person);
   }
 }

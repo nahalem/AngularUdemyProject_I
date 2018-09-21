@@ -1,9 +1,28 @@
 <div class="row">
+  <h1>Communication First Example</h1>
+</div>
+<div class="row">
   <div class="col-lg-12">
     <app-list-component (selectedPerson)="selectedPerson($event)"></app-list-component>
-
   </div>
+</div>
+<div class="row">
   <div class="col-lg-12">
     <app-item-component [person]="person"></app-item-component>
   </div>
 </div>
+
+
+<div class="row">
+  <h1>Communication Second Example</h1>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <app-list-component (selectedPerson)="selectedPerson($event)"></app-list-component>
+  </div>
+</div>
+<!-- <div class="row">
+  <div class="col-lg-12">
+    <app-item-component [person]="person"></app-item-component>
+  </div>
+</div> -->
