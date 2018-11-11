@@ -10,6 +10,7 @@ import { InredientsMock } from '../../../mocks/ingredients.mock';
 export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[] = [];
   ingredientsMock: InredientsMock;
+  isNewIngredient: boolean;
 
   constructor() {
     this.ingredientsMock = new InredientsMock();
@@ -17,10 +18,12 @@ export class ShoppingListComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.isNewIngredient = false;
   }
 
   onIngredientAdded(ingredient: Ingredient) : void{
     this.ingredients.push(ingredient);
+    this.isNewIngredient = true;
   };
 
 }

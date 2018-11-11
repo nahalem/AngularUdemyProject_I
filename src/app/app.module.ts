@@ -44,6 +44,8 @@ import { LoginComponent } from './components/login/login.component';
 import { MainComponentComponent } from './components/components-communication/main-component/main-component.component';
 import { ListComponentComponent } from './components/components-communication/list-component/list-component.component';
 import { ItemComponentComponent } from './components/components-communication/item-component/item-component.component';
+import { BasicHiglightDirective } from './directives/basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './directives/better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -73,6 +75,8 @@ import { ItemComponentComponent } from './components/components-communication/it
     MainComponentComponent,
     ListComponentComponent,
     ItemComponentComponent,
+    BasicHiglightDirective,
+    BetterHighlightDirective,
   ],
   imports: [
     AppRoutingModule,
