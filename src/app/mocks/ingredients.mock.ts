@@ -19,6 +19,7 @@ export class InredientsMock implements IMock<Ingredient> {
   }
 
   public getMockData(): Array<Ingredient> {
+    console.log('InredientsMock:');
     console.log(this.data);
     return this.data;
   }
