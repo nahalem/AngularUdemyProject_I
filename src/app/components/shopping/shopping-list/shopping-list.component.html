@@ -8,7 +8,7 @@
       style='cursor: pointer'
       *ngFor='let ingredientItem of ingredients'>
       <p appBasicHiglight> {{ingredientItem.name}} ({{ingredientItem.amount}})</p>
-      <p appBetterHighlight> {{ingredientItem.name}} ({{ingredientItem.amount}})</p>
+      <p appBetterHighlight [defaultColor]="'transparent'" [highlightColor]="'red'" [clickedColor]="'green'" [data]="ingredientItem"> {{ingredientItem.name}} ({{ingredientItem.amount}})</p>
       </a>
     </ul>
   </div>
