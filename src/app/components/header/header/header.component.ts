@@ -55,6 +55,7 @@ export class HeaderComponent implements OnInit {
               label: "My Playground",
               items: [
                 { label: "Component communication", routerLink: "/components-communication" },
+                { label: "Binding Examples", routerLink: "/bindings-examples" },
               ]
             },
             // {

@@ -2,9 +2,9 @@ REM Please change componentName and run the script in the main WebApp localizati
 REM Example: componentName=SomeComponent
 REM Script should build all the neccessary files structure to begin work with it.
 CLS
-SET childFolderName=components-communication
-SET componentName=item-component
-SET componentsFolderName=item-component
+SET childFolderName=examples
+SET componentName=bindings-component
+SET componentsFolderName=bindings-component
 
 REM Components
 REM ng g c components/%componentsFolderName%/%componentName% --spec false

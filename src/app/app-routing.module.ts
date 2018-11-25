@@ -15,6 +15,7 @@ import { PrimeNgComponent } from "./components/prime-ng/prime-ng.component";
 import { PrimeNgModuleComponent } from "./modules/prime-ng/prime-ng.component";
 import { LoginComponent } from "./components/login/login.component";
 import { MainComponentComponent } from "./components/components-communication/main-component/main-component.component";
+import { BindingsComponentComponent } from "./components/examples/bindings-component/bindings-component.component";
 // import { LandingPageResolver } from "./components/landing-page/landing-page.resolver";
 // import { UserChangePasswordComponent } from './components/user-change-password/user-change-password.component';
 // import { SettingsPopup } from './components/settings/settingsPopup';
@@ -107,6 +108,14 @@ const appRoutes: Routes = [
     //     profile: LandingPageResolver
     // }
   },
+  {
+    path: "bindings-examples",
+    component: BindingsComponentComponent
+    // resolve: {
+    //     profile: LandingPageResolver
+    // }
+  },
+
 
 
   // {
