@@ -49,6 +49,7 @@ import { BetterHighlightDirective } from './directives/better-highlight/better-h
 import { BindingsComponentComponent } from './components/examples/bindings-component/bindings-component.component';
 import { DirectivesComponentComponent } from './components/examples/directives-component/directives-component.component';
 import { SexDetectionDirective } from './directives/sex-detection/sex-detection.directive';
+import { ValidationRequiredDirective } from './directives/validation-required/validation-required.directive';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { SexDetectionDirective } from './directives/sex-detection/sex-detection.
     BindingsComponentComponent,
     DirectivesComponentComponent,
     SexDetectionDirective,
+    ValidationRequiredDirective,
   ],
   imports: [
     AppRoutingModule,
