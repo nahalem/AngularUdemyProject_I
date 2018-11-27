@@ -2,8 +2,8 @@ REM Please change componentName and run the script in the main WebApp localizati
 REM Example: componentName=SomeComponent
 REM Script should build all the neccessary files structure to begin work with it.
 CLS
-SET childFolderName=better-highlight
-SET directiveName=better-highlight
+SET childFolderName=sex-detection
+SET directiveName=sex-detection
 SET directiveFolderName=directives
 
 REM Components

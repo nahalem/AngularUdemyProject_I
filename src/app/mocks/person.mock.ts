@@ -17,11 +17,33 @@ export class PersonMock implements IMock<Person> {
        "Rambo",
        "rambo@email.com",
        Gender.Male
-      )
+      ),
+      new Person(
+        2,
+        "Monika",
+        "Sexy",
+        "monika@email.com",
+        Gender.Female
+       ),
+       new Person(
+        3,
+        "Mark",
+        "Spencer",
+        "mark@email.com",
+        Gender.Male
+       ),
+       new Person(
+         4,
+         "Katarzyna",
+         "Ogórek",
+         "kasiorka@email.com",
+         Gender.Female
+        )
     );
   }
 
   public getMockData(): Array<Person> {
+    console.log('getMockData()');
     console.log(this.data);
     return this.data;
   }

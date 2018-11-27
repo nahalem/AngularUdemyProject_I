@@ -47,6 +47,8 @@ import { ItemComponentComponent } from './components/components-communication/it
 import { BasicHiglightDirective } from './directives/basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './directives/better-highlight/better-highlight.directive';
 import { BindingsComponentComponent } from './components/examples/bindings-component/bindings-component.component';
+import { DirectivesComponentComponent } from './components/examples/directives-component/directives-component.component';
+import { SexDetectionDirective } from './directives/sex-detection/sex-detection.directive';
 
 @NgModule({
   declarations: [
@@ -79,6 +81,8 @@ import { BindingsComponentComponent } from './components/examples/bindings-compo
     BasicHiglightDirective,
     BetterHighlightDirective,
     BindingsComponentComponent,
+    DirectivesComponentComponent,
+    SexDetectionDirective,
   ],
   imports: [
     AppRoutingModule,

@@ -1,0 +1,12 @@
+<p>
+  directives-component works!
+</p>
+
+<div class="list-group">
+  <li class="list-group-item"
+  *ngFor="let item of data">
+  <div *appSexDetection="item.Gender">
+  </div>
+  {{item.Gender}}
+  </li>
+</div>
