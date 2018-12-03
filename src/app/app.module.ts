@@ -50,6 +50,8 @@ import { BindingsComponentComponent } from './components/examples/bindings-compo
 import { DirectivesComponentComponent } from './components/examples/directives-component/directives-component.component';
 import { SexDetectionDirective } from './directives/sex-detection/sex-detection.directive';
 import { ValidationRequiredDirective } from './directives/validation-required/validation-required.directive';
+import { Validation2RequiredDirective } from './directives/validation2-required/validation2-required.directive';
+import { ValidatorComponentComponent } from './components/examples/validator-component/validator-component.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +87,8 @@ import { ValidationRequiredDirective } from './directives/validation-required/va
     DirectivesComponentComponent,
     SexDetectionDirective,
     ValidationRequiredDirective,
+    Validation2RequiredDirective,
+    ValidatorComponentComponent,
   ],
   imports: [
     AppRoutingModule,

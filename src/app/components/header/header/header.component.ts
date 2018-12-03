@@ -57,6 +57,7 @@ export class HeaderComponent implements OnInit {
                 { label: "Component communication", routerLink: "/components-communication" },
                 { label: "Binding Examples", routerLink: "/bindings-examples" },
                 { label: "Directives Examples", routerLink: "/directives-examples" },
+                { label: "Validators Examples", routerLink: "/validator-examples" },
               ]
             },
             // {

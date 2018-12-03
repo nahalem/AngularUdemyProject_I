@@ -16,6 +16,7 @@ export class Person{
 
 
 export enum Gender{
+  None,
   Male,
   Female
 }
