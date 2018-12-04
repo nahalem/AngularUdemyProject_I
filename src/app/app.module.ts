@@ -54,6 +54,7 @@ import { ValidationRequiredDirective } from './directives/validation-required/va
 import { Validation2RequiredDirective } from './directives/validation2-required/validation2-required.directive';
 import { ValidatorComponentComponent } from './components/examples/validator-component/validator-component.component';
 import { DropdownDirectiveDirective } from './directives/dropdown-directive/dropdown-directive.directive';
+import { Dropdown2DirectiveDirective } from './directives/dropdown2-directive/dropdown2-directive.directive';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { DropdownDirectiveDirective } from './directives/dropdown-directive/drop
     Validation2RequiredDirective,
     ValidatorComponentComponent,
     DropdownDirectiveDirective,
+    Dropdown2DirectiveDirective,
   ],
   imports: [
     AppRoutingModule,
