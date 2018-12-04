@@ -47,6 +47,9 @@
               <div class="row">
                   <div class="form-group">
                       <label for="genderInput">Gender</label>
+
+                      <p-multiSelect [options]="person.Gender" [(ngModel)]="selectedGender" optionLabel="name"></p-multiSelect>
+
                       <input type="text" [(ngModel)]="person.Gender" class="form-control" id="genderInput" aria-describedby="emailHelp" placeholder="Enter gender">
                       <small id="emailHelp" class="form-text text-muted">Please give the gender.</small>
                     </div>

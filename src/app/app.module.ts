@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import {MenuModule} from 'primeng/primeng';
 import {TieredMenuModule} from 'primeng/primeng';
 import {MegaMenuModule} from 'primeng/primeng';
+import {MultiSelectModule} from 'primeng/primeng';
 // Routing
 import { AppRoutingModule } from './app-routing.module';
 
@@ -52,6 +53,7 @@ import { SexDetectionDirective } from './directives/sex-detection/sex-detection.
 import { ValidationRequiredDirective } from './directives/validation-required/validation-required.directive';
 import { Validation2RequiredDirective } from './directives/validation2-required/validation2-required.directive';
 import { ValidatorComponentComponent } from './components/examples/validator-component/validator-component.component';
+import { DropdownDirectiveDirective } from './directives/dropdown-directive/dropdown-directive.directive';
 
 @NgModule({
   declarations: [
@@ -89,6 +91,7 @@ import { ValidatorComponentComponent } from './components/examples/validator-com
     ValidationRequiredDirective,
     Validation2RequiredDirective,
     ValidatorComponentComponent,
+    DropdownDirectiveDirective,
   ],
   imports: [
     AppRoutingModule,
@@ -105,6 +108,7 @@ import { ValidatorComponentComponent } from './components/examples/validator-com
     MenuModule,
     TieredMenuModule,
     MegaMenuModule,
+    MultiSelectModule,
 
     PrimeNgModule
   ],

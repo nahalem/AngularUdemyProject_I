@@ -2,8 +2,8 @@ REM Please change componentName and run the script in the main WebApp localizati
 REM Example: componentName=SomeComponent
 REM Script should build all the neccessary files structure to begin work with it.
 CLS
-SET childFolderName=validation2-required
-SET directiveName=validation2-required
+SET childFolderName=dropdown-directive
+SET directiveName=dropdown-directive
 SET directiveFolderName=directives
 
 REM Components
