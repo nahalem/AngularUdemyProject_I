@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Ingredient } from "./../../../shared/models/ingredients.model";
 import { InredientsMock } from '../../../mocks/ingredients.mock';
+import { ShoppingListService } from 'app/services/shopping-list.service';
 
 @Component({
   selector: 'app-shopping-list',
@@ -9,20 +10,20 @@ import { InredientsMock } from '../../../mocks/ingredients.mock';
 })
 export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[] = [];
-  ingredientsMock: InredientsMock;
   isNewIngredient: boolean;
 
-  constructor() {
-    this.ingredientsMock = new InredientsMock();
-    this.ingredients = this.ingredientsMock.getMockData();
+  constructor(
+    private shoppingListService: ShoppingListService
+  ) {
   }
 
   ngOnInit() {
+    this.ingredients = this.shoppingListService.getIngredients();
     this.isNewIngredient = false;
   }
 
   onIngredientAdded(ingredient: Ingredient) : void{
-    this.ingredients.push(ingredient);
+    //this.shoppingListService.addIngredient(ingredient);
     this.isNewIngredient = true;
   };
 

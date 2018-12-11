@@ -43,8 +43,10 @@ export class AppComponent {
   };
 
 
-  loadedFeature = 'recipe'; // home page
+  loadedFeature: string =  'shoppingList'; // home page
   onNavigate(feature: string): void{
+    console.log('onNavigate(feature: string)')
+    console.log(feature)
     this.loadedFeature = feature;
   };
 }

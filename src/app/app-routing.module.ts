@@ -51,13 +51,13 @@ const appRoutes: Routes = [
     //     profile: LandingPageResolver
     // }
   },
-  // {
-  //   path: "recipesItem",
-  //   component: RecipesItemComponent
-  //   // resolve: {
-  //   //     profile: LandingPageResolver
-  //   // }
-  // },
+  {
+    path: "recipesItem",
+    component: RecipesItemComponent
+    // resolve: {
+    //     profile: LandingPageResolver
+    // }
+  },
   {
     path: "shoppingEdit",
     component: ShoppingEditComponent
