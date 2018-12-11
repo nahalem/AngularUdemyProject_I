@@ -13,13 +13,15 @@
 
       <ul class="nav navbar-nav">
         <li>
-          <a href="#" (click)="onSelect('recipe', $event)">Recipes</a>
+          <!-- <a href="#" (click)="onSelect('recipes', $event)">Recipes</a> -->
+          <a routerLink = "/recipes" routerLinkActive="active">Recipes</a>
         </li>
         <li>
-          <a routerLink = "/recipesDetail" >Recipes Details</a>
+          <a routerLink = "/recipesDetail" routerLinkActive="active">Recipes Details</a>
         </li>
         <li>
-          <a href="#"  (click)="onSelect('shopping', $event)">Shopping List</a>
+          <!-- <a href="#" (click)="onSelect('shoppingList', $event)">Shopping List</a> -->
+          <a routerLink = "/shoppingList" routerLinkActive="active">Shopping List</a>
         </li>
       </ul>
 

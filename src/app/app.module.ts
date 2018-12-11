@@ -55,6 +55,8 @@ import { Validation2RequiredDirective } from './directives/validation2-required/
 import { ValidatorComponentComponent } from './components/examples/validator-component/validator-component.component';
 import { DropdownDirectiveDirective } from './directives/dropdown-directive/dropdown-directive.directive';
 import { Dropdown2DirectiveDirective } from './directives/dropdown2-directive/dropdown2-directive.directive';
+import { ShoppingListService } from './services/shopping-list.service';
+import { RecipeService } from './services/recipe.service';
 
 @NgModule({
   declarations: [
@@ -114,7 +116,10 @@ import { Dropdown2DirectiveDirective } from './directives/dropdown2-directive/dr
 
     PrimeNgModule
   ],
-  providers: [],
+  providers: [
+    ShoppingListService,
+    RecipeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
