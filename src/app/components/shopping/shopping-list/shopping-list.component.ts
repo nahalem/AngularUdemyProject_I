@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Ingredient } from "./../../../shared/models/ingredients.model";
-import { InredientsMock } from '../../../mocks/ingredients.mock';
 import { ShoppingListService } from 'app/services/shopping-list.service';
 
 @Component({
@@ -19,12 +18,12 @@ export class ShoppingListComponent implements OnInit {
 
   ngOnInit() {
     this.ingredients = this.shoppingListService.getIngredients();
+    this.shoppingListService.ingredientsChange.subscribe(
+      (ingredients: Ingredient[]) => {
+        this.ingredients = ingredients
+      }
+    );
     this.isNewIngredient = false;
   }
-
-  onIngredientAdded(ingredient: Ingredient) : void{
-    //this.shoppingListService.addIngredient(ingredient);
-    this.isNewIngredient = true;
-  };
 
 }

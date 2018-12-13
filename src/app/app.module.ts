@@ -104,7 +104,6 @@ import { RecipeService } from './services/recipe.service';
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    FormsModule,
     AccordionModule,
     PanelModule,
     ButtonModule,

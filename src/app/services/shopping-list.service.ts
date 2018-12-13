@@ -7,6 +7,7 @@ export class ShoppingListService {
   private ingredients: Ingredient[] = [];
   ingredientsMock: InredientsMock;
   selectedIngredients = new EventEmitter<Ingredient>();
+  ingredientsChange = new EventEmitter<Ingredient[]>();
 
   constructor(){
     this.ingredientsMock = new InredientsMock();
@@ -19,6 +20,7 @@ export class ShoppingListService {
 
   addIngredient(ingredient: Ingredient): void{
     this.ingredients.push(ingredient);
+    this.ingredientsChange.emit(this.ingredients.slice());
   };
 
 }
