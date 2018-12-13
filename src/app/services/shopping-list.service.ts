@@ -6,7 +6,6 @@ import { InredientsMock } from 'app/mocks/ingredients.mock';
 export class ShoppingListService {
   private ingredients: Ingredient[] = [];
   ingredientsMock: InredientsMock;
-  selectedIngredients = new EventEmitter<Ingredient>();
   ingredientsChange = new EventEmitter<Ingredient[]>();
 
   constructor(){

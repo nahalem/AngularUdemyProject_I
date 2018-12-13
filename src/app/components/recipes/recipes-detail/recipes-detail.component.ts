@@ -14,7 +14,7 @@ export class RecipesDetailComponent implements OnInit {
 
   constructor() {
     if(this.recipe === undefined){
-      this.recipe = new Recipe('','','');
+      this.recipe = new Recipe('','','',[]);
     }
   }
 
