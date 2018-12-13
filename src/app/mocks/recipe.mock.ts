@@ -18,8 +18,8 @@ export class RecipeMock implements IMock<Recipe> {
         "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg",
         [
           new Ingredient('meat', 1),
-          new Ingredient('French Fries', 20),
-        ] // ingredients array
+          new Ingredient('French Fries', 20)
+        ]
       ),
       new Recipe(
         "Test Recipe 2",
@@ -27,8 +27,8 @@ export class RecipeMock implements IMock<Recipe> {
         "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg",
         [
           new Ingredient('meat', 2),
-          new Ingredient('French Fries', 30),
-        ] //
+          new Ingredient('French Fries', 30)
+        ]
       ),
       new Recipe(
         "Test Recipe 3",
@@ -36,8 +36,8 @@ export class RecipeMock implements IMock<Recipe> {
         "http://www.trandynow.com/wp-content/uploads/2018/04/recipe.jpg",
         [
           new Ingredient('meat', 3),
-          new Ingredient('French Fries', 40),
-        ] //
+          new Ingredient('French Fries', 40)
+        ]
       )
     );
   }
